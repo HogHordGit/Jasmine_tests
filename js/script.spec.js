@@ -95,7 +95,7 @@ describe("Тестирование функции weekFn(num)",() => {
         expect(m).toBe(null);
     });
 
-    it("Проверим num = 1.5, должно вернуть null",() => {
+    it("Проверим num = '2', должно вернуть null",() => {
         expect(m).toBe(null);
     });
 });

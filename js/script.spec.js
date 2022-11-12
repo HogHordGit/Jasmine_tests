@@ -2,72 +2,58 @@ describe("Тестирование функции ageClassification(num)",() => 
 
     it("Проверим num = -1, должно вернуть null",() => {
         expect(ageClassification(-1)).toBe(null);
-        console.log(ageClassification(-1));
     });
 
     it("Проверим num = 1, должно вернуть 'детский возраст'",() => {
         expect(ageClassification(1)).toBe("детский возраст");
-        console.log(ageClassification(1));
     });
 
     it("Проверим num = 24, должно вернуть 'детский возраст'",() => {
         expect(ageClassification(24)).toBe("детский возраст");
-        console.log(ageClassification(24));
     });
 
     it("Проверим num = 24.01, должно вернуть 'молодой возраст'",() => {
         expect(ageClassification(24.01)).toBe("молодой возраст");
-        console.log(ageClassification(24.01));
     });
 
     it("Проверим num = 44, должно вернуть 'молодой возраст'",() => {
         expect(ageClassification(44)).toBe("молодой возраст");
-        console.log(ageClassification(44));
     });
 
     it("Проверим num = 44.01, должно вернуть 'cредний возраст'",() => {
         expect(ageClassification(44.01)).toBe("средний возраст");
-        console.log(ageClassification(44.01));
     });
 
     it("Проверим num = 65 , должно вернуть 'cредний возраст'",() => {
         expect(ageClassification(65)).toBe("средний возраст");
-        console.log(ageClassification(65));
     });
 
     it("Проверим num = 65.1, должно вернуть 'пожилой возраст'",() => {
         expect(ageClassification(65.1)).toBe("пожилой возраст");
-        console.log(ageClassification(65.1));
     });
 
     it("Проверим num = 75, должно вернуть 'пожилой возраст'",() => {
         expect(ageClassification(75)).toBe("пожилой возраст");
-        console.log(ageClassification(75));
     });
 
     it("Проверим num = 75.01, должно вернуть 'старческий возраст'",() => {
         expect(ageClassification(75.01)).toBe("старческий возраст");
-        console.log(ageClassification(75.01));
     });
 
     it("Проверим num = 90 , должно вернуть 'старческий возраст'",() => {
         expect(ageClassification(90)).toBe("старческий возраст");
-        console.log(ageClassification(90));
     });
 
     it("Проверим num = 90.01, должно вернуть 'долгожители'",() => {
         expect(ageClassification(90.01)).toBe("долгожители");
-        console.log(ageClassification(90.01));
     });
 
     it("Проверим num = 122, должно вернуть 'долгожители'",() => {
         expect(ageClassification(122)).toBe("долгожители");
-        console.log(ageClassification(122));
     });
 
     it("Проверим num = 122.01  должно вернуть null",() => {
         expect(ageClassification(122.01)).toBe(null);
-        console.log(ageClassification(122.01));
     });
 });
 
